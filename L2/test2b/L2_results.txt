@@ -1,2 +1,0 @@
-Relative L2(n)  over spacetime = 7.343942e-03
-Relative L2(J0) over spacetime = 5.961135e-02
