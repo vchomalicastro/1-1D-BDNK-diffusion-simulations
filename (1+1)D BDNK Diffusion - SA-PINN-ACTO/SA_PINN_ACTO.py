@@ -4,7 +4,6 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 import torch.nn as nn
 import torch.autograd
 
-# Import your physics helper functions from wherever you keep them
 from BDNK_Functions import *
 
 class PINN_BDNK_1D(nn.Module):
