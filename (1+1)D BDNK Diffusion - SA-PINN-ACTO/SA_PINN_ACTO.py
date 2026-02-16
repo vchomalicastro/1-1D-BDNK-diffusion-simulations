@@ -29,7 +29,7 @@ class PINN_BDNK_1D(nn.Module):
         self.alpha_ic_func = None
 
     # Helpers
-    def _scale(self, X):  # (t,x) in physical -> [-1,1]
+    def _scale(self, X):
         return 2.0 * (X - self.lb) / (self.ub - self.lb) - 1.0
 
     # Forward with hard IC
