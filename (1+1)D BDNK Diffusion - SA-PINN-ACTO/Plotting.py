@@ -500,7 +500,7 @@ def plot_combined_loss_history(adam_losses, lbfgs_hist):
     ax1.set_xlabel("Adam epoch")
     ax1.set_ylabel("Loss")
     ax1.set_yscale("log")
-    ax1.grid(True, which="both", linestyle="--", alpha=0.5)#
+    ax1.grid(True, which="both", linestyle="--", alpha=0.5)
     ax1.annotate("Adam stage", (0.45, 0.98), xytext=(0, -5),
                  textcoords="offset points", xycoords="axes fraction",
                  ha="center", va="top", fontsize=27)
@@ -509,18 +509,18 @@ def plot_combined_loss_history(adam_losses, lbfgs_hist):
     ax2.plot(x_iters, ys_plot, lw=2, color='black')
     ax2.set_xlim(1, n_iters)
     ax2.set_xlabel("L-BFGS iteration")
-    ax2.grid(True, which="both", linestyle="--", alpha=0.5)#
+    ax2.grid(True, which="both", linestyle="--", alpha=0.5)
     ax2.annotate("L-BFGS stage", (0.5, 0.98), xytext=(0, -5),
                  textcoords="offset points", xycoords="axes fraction",
                  ha="center", va="top", fontsize=27)
 
-    # trim spines to show the “two-panel” feel
+    # Trim spines to show the “two-panel” feel
     ax1.spines['right'].set_visible(False)
     ax2.spines['left'].set_visible(False)
     ax2.yaxis.tick_right()
     ax2.yaxis.set_label_position("right")
 
-    # epoch ticks 0..N on the L-BFGS panel
+    # Epoch ticks 0..N on the L-BFGS panel
     if n_iters > 0:
         ax2.set_xticks([0, n_iters-1])
 
