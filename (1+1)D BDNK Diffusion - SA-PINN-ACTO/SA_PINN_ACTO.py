@@ -1,8 +1,6 @@
 import torch
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-print('newW!')
-
 import torch.nn as nn
 import torch.autograd
 
@@ -121,8 +119,8 @@ class PINN_BDNK_1D(nn.Module):
         Jx  = Jx_func(n, sigma, lambd, T, N_x, N_0, v)
         Jx_x = self.gradients(Jx, x)[:, 1:2]
 
-        R1 = J0_t + Jx_x          # ∂t J^0 + ∂x J^x
-        R2 = alpha_t + N_0        # ∂t α + N^0
+        R1 = J0_t + Jx_x
+        R2 = alpha_t + N_0
 
         return torch.cat([R1/self.sJ0, R2/self.sA], dim=1)
 

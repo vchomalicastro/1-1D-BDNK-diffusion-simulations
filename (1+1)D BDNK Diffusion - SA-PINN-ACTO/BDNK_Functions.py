@@ -26,7 +26,7 @@ _EPS_TO_T_DENOM = 15.6268736
 
 def _BDNK_base_dir():
     here = os.path.dirname(os.path.abspath(__file__))
-    return os.path.join(here, "BDNK_background_simulations")
+    return os.path.join(here, "BDNK Background Simulations")
 
 def _pick_BDNK_subfolder(base_dir: str, nsim: int) -> str:
     prefix = f"{nsim}_"

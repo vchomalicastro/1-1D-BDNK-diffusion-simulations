@@ -193,7 +193,7 @@ def plot_results(model, t_eval, x_eval, alpha_ic, J0_ic):
     txt = offset.get_text()
     offset.set_visible(False)
     
-    cb.ax.text(3.5, -0.11, txt, transform=cb.ax.transAxes, ha='right', va='bottom', fontsize=offset.get_fontsize())
+    cb.ax.text(3.63, -0.18, txt, transform=cb.ax.transAxes, ha='right', va='bottom', fontsize=offset.get_fontsize())
     
     plt.show()
 
@@ -239,7 +239,7 @@ def plot_results(model, t_eval, x_eval, alpha_ic, J0_ic):
     txt = offset.get_text()
     offset.set_visible(False)
     
-    cb.ax.text(3.5, -0.11, txt, transform=cb.ax.transAxes, ha='right', va='bottom', fontsize=offset.get_fontsize())
+    cb.ax.text(3.63, -0.18, txt, transform=cb.ax.transAxes, ha='right', va='bottom', fontsize=offset.get_fontsize())
     
     plt.show()
 
@@ -386,13 +386,13 @@ def plot_pde_residuals(model, t_eval, x_eval):
         d_st_dt  = grad(sigma * T * Wt)[:, 0:1]
         d_sx_dx  = grad(sigma * T * Wx)[:, 1:2]
 
-        R3 = (d_gn_dt + d_gnv_dx + d_lt_dt + d_lx_dx - d_st_dt - d_sx_dx)/alpha[:Nx].max()
+        R0 = (d_gn_dt + d_gnv_dx + d_lt_dt + d_lx_dx - d_st_dt - d_sx_dx)/alpha[:Nx].max()
 
     def to_grid(R):
         return R.detach().cpu().numpy().reshape(Nt, Nx)
 
     labels = [r"$|R_0|$", r"$|R_1|$", r"$|R_2|$"]
-    data   = [to_grid(R3), to_grid(R1), to_grid(R2)]
+    data   = [to_grid(R0), to_grid(R1), to_grid(R2)]
 
     plt.rcParams.update({
         "axes.titlesize": 39,

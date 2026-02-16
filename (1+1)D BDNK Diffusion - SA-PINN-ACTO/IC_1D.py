@@ -12,14 +12,14 @@ def IC_BDNK(x, L):
     p, q, r = 0.2, 7.0, 1.0      # Initial condition parameters
     
     # First setup:
-    # n = p * torch.exp(- (q * x_vals / L)**2) + r
+    n = p * torch.exp(- (q * x_vals / L)**2) + r
     
     # Second setup:
-    sharpness = 60
-    n = (1.1 - 0.1*torch.tanh(sharpness*((4*x_vals/L)**2-1)))
+    # sharpness = 60
+    # n = (1.1 - 0.1*torch.tanh(sharpness*((4*x_vals/L)**2-1)))
     
     # Third setup:
-    # n = 1e-3*(p * torch.exp(- (q * x_vals / L)**2) + r)
+    #n = 1e-3*(p * torch.exp(- (q * x_vals / L)**2) + r)
     
     T = T_func(t_vals, x_vals)
     
@@ -34,10 +34,10 @@ def IC_BDNK(x, L):
     d, f, g = 0.05, 10.0, 1.05      # Initial condition parameters
 
     # First setup:
-    #J0 = d * torch.exp(- (f * x_vals / L)**2) + g
+    J0 = d * torch.exp(- (f * x_vals / L)**2) + g
 
     # Second setup:
-    J0 = torch.ones_like(x_vals)*g
+    #J0 = torch.ones_like(x_vals)*g
 
     # Third setup:
     #J0 = 1e-3 * torch.ones_like(x_vals)*g
