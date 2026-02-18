@@ -1,5 +1,5 @@
 # (1+1)D BDNK Diffusion Simulations
-SA-PINN-ACTO (physics-informed neural network) and KT (Kurganov-Tadmor) simulations to BDNK diffusion in (1+1)D, as used in "Solving BDNK diffusion using physics-informed neural networks" (Chomali-Castro, Clarisse, Mullins, Noronha, 2026).
+SA-PINN-ACTO (physics-informed neural network) and KT (Kurganov-Tadmor) simulations to BDNK diffusion in (1+1)D, as used in "Solving BDNK diffusion using physics-informed neural networks" (Chomalí-Castro, Clarisse, Mullins, Noronha, 2026).
 
 ---
 
