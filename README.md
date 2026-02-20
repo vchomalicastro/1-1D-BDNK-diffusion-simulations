@@ -95,3 +95,26 @@ This repository contains Python code for simulating BDNK diffusion both with the
 ## Reproducibility
 
 All figures in the paper can be reproduced by running the corresponding Jupyter notebooks in each directory. Precomputed outputs are provided for convenience and to ensure exact reproducibility of published results.
+
+---
+
+## Citation
+
+If you use this code in your research, please cite:
+
+Chomalí-Castro, V., Clarisse, N., Mullins, N., & Noronha, J. (2026).  
+*Solving BDNK diffusion using physics-informed neural networks*.  
+DOI: [10.48550/arXiv.2602.16117](https://doi.org/10.48550/arXiv.2602.16117)
+
+BibTeX:
+```bibtex
+@misc{chomali2026bdnk,
+  title        = {Solving BDNK diffusion using physics-informed neural networks},
+  author       = {Chomal{\'i}-Castro, Vicente and Clarisse, Nick and Mullins, Nicki and Noronha, Jorge},
+  year         = {2026},
+  eprint       = {2602.16117},
+  archivePrefix= {arXiv},
+  primaryClass = {nucl-th},
+  doi          = {10.48550/arXiv.2602.16117}
+}
+```
