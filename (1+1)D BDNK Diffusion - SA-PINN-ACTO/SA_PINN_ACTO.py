@@ -19,7 +19,7 @@ class PINN_BDNK_1D(nn.Module):
         self.net = nn.Sequential()
         self.net.add_module('Linear_layer_1', nn.Linear(2, Nn))
         self.net.add_module('Tanh_layer_1', nn.Tanh())
-        for num in range(2, Nl):
+        for num in range(2, Nl+1):
             self.net.add_module(f'Linear_layer_{num}', nn.Linear(Nn, Nn))
             self.net.add_module(f'Tanh_layer_{num}', nn.Tanh())
         self.net.add_module('Linear_layer_final', nn.Linear(Nn, 2))  # [J0_raw, alpha_raw]
