@@ -1,0 +1,4 @@
+Relative L2(n)  over spacetime = 7.030228e-03
+Relative L2(J0) over spacetime = 7.371177e-03
+Adam-only relative L2(n)  over spacetime = 8.040203e-03
+Adam-only relative L2(J0) over spacetime = 8.395436e-03
