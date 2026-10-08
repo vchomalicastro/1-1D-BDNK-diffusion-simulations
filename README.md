@@ -4,7 +4,7 @@ SA-PINN-ACTO (physics-informed neural network) and KT (Kurganov-Tadmor) simulati
 
 Results are provided in two variants throughout this repository:
 
-- `PRD/` — the version accompanying the published article in Physical Review D. **These reproduce the published figures.**
+- `PRD/` — the version accompanying the published article in [Physical Review D](https://doi.org/10.1103/shpm-ksq9). **These reproduce the published figures.**
 - `arXiv/` — the earlier version accompanying the preprint, [arXiv:2602.16117](https://doi.org/10.48550/arXiv.2602.16117).
 
 ---
@@ -17,7 +17,7 @@ This repository contains Python code for simulating BDNK diffusion both with the
 
 - **Title:** Solving Bemfica-Disconzi-Noronha-Kovtun diffusion using physics-informed neural networks
 - **Authors:** Vicente Chomalí-Castro, Nick Clarisse, Nicki Mullins, Jorge Noronha
-- **Journal:** Physical Review D (2026)
+- **Journal:** Physical Review D 114, 076013 (2026)
 - **Year:** 2026
 - **DOI:** [10.1103/shpm-ksq9](https://doi.org/10.1103/shpm-ksq9)
 - **Preprint:** [10.48550/arXiv.2602.16117](https://doi.org/10.48550/arXiv.2602.16117)
@@ -103,20 +103,24 @@ If you use this code in your research, please cite:
 
 Chomalí-Castro, V., Clarisse, N., Mullins, N., & Noronha, J. (2026).  
 *Solving Bemfica-Disconzi-Noronha-Kovtun diffusion using physics-informed neural networks*.  
-Physical Review D.  
+Physical Review D **114**, 076013.  
 DOI: [10.1103/shpm-ksq9](https://doi.org/10.1103/shpm-ksq9)
 
 BibTeX:
 
 ```bibtex
-@article{chomali2026bdnk,
-  title        = {Solving Bemfica-Disconzi-Noronha-Kovtun diffusion using physics-informed neural networks},
-  author       = {Chomal{\'i}-Castro, Vicente and Clarisse, Nick and Mullins, Nicki and Noronha, Jorge},
-  journal      = {Phys. Rev. D},
-  year         = {2026},
-  doi          = {10.1103/shpm-ksq9},
-  eprint       = {2602.16117},
-  archivePrefix= {arXiv},
-  primaryClass = {nucl-th}
+@article{shpm-ksq9,
+  title = {Solving Bemfica-Disconzi-Noronha-Kovtun diffusion using physics-informed neural networks},
+  author = {Chomal{\'{\i}}-Castro, Vicente and Clarisse, Nick and Mullins, Nicki and Noronha, Jorge},
+  journal = {Phys. Rev. D},
+  volume = {114},
+  issue = {7},
+  pages = {076013},
+  numpages = {28},
+  year = {2026},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/shpm-ksq9},
+  url = {https://link.aps.org/doi/10.1103/shpm-ksq9}
 }
 ```
